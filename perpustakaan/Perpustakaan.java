@@ -25,18 +25,18 @@ public class Perpustakaan {
         Buku buku = cariBuku(judul);
 
         if (anggota == null) {
-            System.out.println("tidak ditemukan anggota dengan nama " + namaAnggota);
+            System.out.println("anggota yang mau minjam ");
             return;
         }
         if (buku == null) {
-            System.out.println("tidak ada buku dengan judul " + judul);
+            System.out.println("tidak ada buku yang mau di pinjam ");
             return;
         }
 
         if (buku.isStatus()) {
             buku.setStatus(false);
             anggota.pinjamBuku(buku);
-            System.out.println("Buku " + judul + " berhasil dipinjam oleh " + namaAnggota);
+            System.out.println(namaAnggota + " berhasil meminjam buku " + judul);
         } else {
             System.out.println("bukunya udah dipinjam ya ");
         }
@@ -47,11 +47,11 @@ public class Perpustakaan {
         Buku buku = cariBuku(judulBuku);
 
         if (anggota == null) {
-            System.out.println("salah nama kayaknya");
+            System.out.println("salah ngetik nama kamu kayaknya");
             return;
         }
         if (buku == null) {
-            System.out.println("tidak ada buku yang berjudul itu");
+            System.out.println("salah ngetik judul kamu kayaknya");
             return;
         }
 
@@ -91,7 +91,7 @@ public class Perpustakaan {
         if (anggota != null) {
             anggota.tampilkanInfoAnggota();
         } else {
-            System.out.println("dia tidak ditemukan atau belum terdaftar");
+            System.out.println("tidak ditemukan atau belum terdaftar");
         }
     }
 
