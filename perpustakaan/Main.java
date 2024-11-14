@@ -34,6 +34,7 @@ public class Main {
                     switch (pilihJenis) {
                         case 1:
                             // Tambah Buku Biasa
+                            System.out.println("====================");
                             System.out.print("Masukkan judul buku: ");
                             String judul = scan.nextLine();
                             System.out.print("Masukkan nama pengarang: ");
@@ -50,6 +51,7 @@ public class Main {
 
                         case 2:
                             // Tambah Buku Digital
+                            System.out.println("====================");
                             System.out.print("Masukkan judul buku: ");
                             judul = scan.nextLine();
                             System.out.print("Masukkan nama pengarang: ");
@@ -59,7 +61,7 @@ public class Main {
                             scan.nextLine();  
                             System.out.print("Masukkan ISBN: ");
                             ISBN = scan.nextLine();
-                            System.out.print("Masukkan jenis file yang anda ingin masukkan: ");
+                            System.out.print("Masukkan jenis file yang anda dapatkan: ");
                             String bentukfile = scan.nextLine();
                             System.out.print("Masukkan kode dari file tersebut1"
                                     + ": ");

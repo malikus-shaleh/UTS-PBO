@@ -12,12 +12,12 @@ public class Perpustakaan {
 
     public void tambahBukubaru(Buku buku) {
         daftarBuku.add(buku);
-        System.out.println("Buku " + buku.getJudul() + " berhasil ditambahkan.");
+        System.out.println("berhasil menambahkan buku baru");
     }
 
     public void tambahAnggota(Anggota anggota) {
         daftarAnggota.add(anggota);
-        System.out.println("Anggota " + anggota.getNama() + " berhasil didaftarkan.");
+        System.out.println("Anggota sudah berhasil didaftarkan.");
     }
 
     public void minjamBuku(String namaAnggota, String judul) {
@@ -25,20 +25,20 @@ public class Perpustakaan {
         Buku buku = cariBuku(judul);
 
         if (anggota == null) {
-            System.out.println("Anggota " + namaAnggota + " tidak ditemukan.");
+            System.out.println("tidak ditemukan anggota dengan nama " + namaAnggota);
             return;
         }
         if (buku == null) {
-            System.out.println("Buku " + judul + " tidak ditemukan.");
+            System.out.println("tidak ada buku dengan judul " + judul);
             return;
         }
 
         if (buku.isStatus()) {
             buku.setStatus(false);
             anggota.pinjamBuku(buku);
-            System.out.println("Buku " + judul + " berhasil dipinjam oleh " + namaAnggota + ".");
+            System.out.println("Buku " + judul + " berhasil dipinjam oleh " + namaAnggota);
         } else {
-            System.out.println("Buku \"" + judul + "\" saat ini sedang dipinjam.");
+            System.out.println("bukunya udah dipinjam ya ");
         }
     }
 
@@ -47,28 +47,29 @@ public class Perpustakaan {
         Buku buku = cariBuku(judulBuku);
 
         if (anggota == null) {
-            System.out.println("Anggota \"" + namaAnggota + "\" tidak ditemukan.");
+            System.out.println("salah nama kayaknya");
             return;
         }
         if (buku == null) {
-            System.out.println("Buku \"" + judulBuku + "\" tidak ditemukan.");
+            System.out.println("tidak ada buku yang berjudul itu");
             return;
         }
 
         if (anggota.bukudipinjam(buku)) {
             buku.setStatus(true);
             anggota.kembalikanBuku(buku);
-            System.out.println("Buku \"" + judulBuku + "\" berhasil dikembalikan oleh " + namaAnggota + ".");
+            System.out.println("Buku sudah dikembalikan");
         } else {
-            System.out.println("Anggota \"" + namaAnggota + "\" tidak meminjam buku ini.");
+            System.out.println("Dia tidak meminjam buku itu");
         }
     }
     
     public void daftarBukuTersedia() {
-        System.out.println("Daftar Buku Tersedia:");
+        System.out.println("buku yang tersedia:");
         for (Buku buku : daftarBuku) {
             if (buku.isStatus()) {
                 buku.infobuku();
+                System.out.println("buku masih ada di perpustakaan");
             }else{
                 System.out.println("buku sedang dipinjam");
             }
@@ -90,7 +91,7 @@ public class Perpustakaan {
         if (anggota != null) {
             anggota.tampilkanInfoAnggota();
         } else {
-            System.out.println("Anggota \"" + nama + "\" tidak ditemukan.");
+            System.out.println("dia tidak ditemukan atau belum terdaftar");
         }
     }
 
