@@ -16,7 +16,7 @@ NIM : 32602300026
 
 3. Gambar dibawah ini adalah tampilan bagaimana cara memasukkan pinjaman buku ke anggota dengan cara memasukkan nama anggota yang ingin meminjam dan memasukkan judul dari buku yang akan dipinjam
 
-![alt text](https://github.com/malikus-shaleh/UTS-Pemrograman-Berorientasi-Objek/blob/main/foto%20running/3.jpg.jpg?raw=true)
+![alt text](https://github.com/malikus-shaleh/UTS-Pemrograman-Berorientasi-Objek/blob/main/foto%20running/3.jpg?raw=true)
 
 4. Gambar dibawah ini adalah tampilan bagaimana cara mengembalikan buku yang dipinjam dengan cara memasukkan nama anggota yang meminjam buku dan judul buku yang ingin dikembalikan, apabila judul buku yang ingin dikembalikan tidak ada maka buku tidak akan ditemukan
 
