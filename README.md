@@ -8,7 +8,7 @@ NIM : 32602300026
 
 1. Gambar dibawah ini adalah tampilan untuk menambahan buku baru dengan 2 tipe buku  
 
-![alt text](https://github.com/malikus-shaleh/UTS-Pemrograman-Berorientasi-Objek/blob/main/foto%20running/1.jpg?raw=true)  
+![alt text](https://github.com/malikus-shaleh/UTS-Pemrograman-Berorientasi-Objek-dengan-OOP/blob/main/foto%20running/1.jpg?raw=true)  
 
 2. Gambar dibawah ini adalah tampilan untuk memasukkan anggota baru
 
